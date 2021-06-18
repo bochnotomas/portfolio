@@ -1,9 +1,12 @@
 import './App.css';
+import HeroSection from './components/HeroSection/HeroSection';
+import AboutMe from './components/AboutMe/AboutMe';
 
 function App() {
   return (
     <div className="App">
-     hello
+        <HeroSection />
+        <AboutMe />
     </div>
   );
 }
