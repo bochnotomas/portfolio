@@ -1,0 +1,131 @@
+.container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+    margin-bottom: 3em;
+}
+
+.col_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col_1 img {
+    height: 400px;
+    width: 100%;
+}
+
+.col_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.col_2 h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00b866;
+    line-height: 48px;
+    margin-bottom: 1em;
+}
+
+.col_2 p {
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttons button {
+    width: 90px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #00b866;
+    font-weight: medium;
+    cursor: pointer;
+    color: white;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.tooltip {
+    background: #fff;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.icon:hover .tooltip {
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.tooltip:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
+    .col_2 h1 {
+        font-size: 48px;
+    }
+
+    .col_2 p {
+        font-size: 24px;
+    }
+
+    .buttons button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .buttons button a {
+        font-size: 24px;
+    }
+
+    .tooltip {
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+}

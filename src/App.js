@@ -1,21 +1,18 @@
 import './App.css';
-import HeroSection from './components/HeroSection/HeroSection';
-import AboutMe from './components/AboutMe/AboutMe';
-import Nav from './components/Nav/Nav';
-import MyProjects from './components/MyProjects/MyProjects';
-import Footer from './components/Footer/Footer';
+import Main from './components/Main/Main';
+import ContactMe from './components/ContactMe/ContactMe';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
 function App() {
     return (
-        <div className="App">
-            <Nav />
-            <div className="main">
-                <HeroSection />
-                <AboutMe />
-                <MyProjects />
-                <Footer />
+        <Router>
+            <div className="App">
+                <Switch>
+                    <Route path="/" exact component={Main} />
+                    <Route path="/contactme" component={ContactMe}/>
+                </Switch>
             </div>
-            
-        </div>
+        </Router>
     );
 }
 
