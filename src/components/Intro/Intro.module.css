@@ -3,7 +3,6 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 92px;
 }
 
 .col_1 {
@@ -52,6 +51,7 @@
     .container {
         grid-template-columns: 1fr;
         height: 100%;
+        padding-top: 92px;
     }
 
     .col_1 h1 {
