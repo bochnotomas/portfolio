@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styles from './MyProjects.module.css';
 import img from '../../images/cryptozoid_clay.svg';
 import cryptozoid from '../../images/cryptozoid_clay.svg';
@@ -9,16 +9,23 @@ import game from '../../images/game.svg';
 import bot from '../../images/chatbot.svg';
 import cal from '../../images/calculator.svg';
 import domestic from '../../images/domestic.svg';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function MyProjects() {
+
+    useEffect(() => {
+        Aos.init({duration: 1000});
+    }, []);
+
     return (
         <div className={styles.container}>
-            <div className={styles.title}>
+            <div data-aos="fade-up" className={styles.title}>
                 <h1>My Projects</h1>
             </div>
 
             <div className={styles.project_container}>
-                <div className={styles.project}>
+                <div data-aos="fade-up" className={styles.project}>
                     <div className={styles.col_1}>
                         <img src={cryptozoid} alt="" />
                     </div>
@@ -35,7 +42,7 @@ export default function MyProjects() {
                     </div>
                 </div>
 
-                <div className={styles.project}>
+                <div data-aos="fade-up" className={styles.project}>
                     <div className={styles.col_2}>
                         <h2>Weatherio</h2>
                         <p>This is one of my latest projects, the weather dashboard. The main focus of this project was to learn how to handle asynchronous actions in my code with the use of asynchronous vanilla Javascript and APIs.</p>
@@ -52,7 +59,7 @@ export default function MyProjects() {
                     </div>
                 </div>
 
-                <div className={styles.project}>
+                <div data-aos="fade-up" className={styles.project}>
                     <div className={styles.col_1}>
                         <img src={todoloui} alt="" />
                     </div>
@@ -68,7 +75,7 @@ export default function MyProjects() {
                         </div>
                     </div>
                 </div>
-                <div className={styles.project}>
+                <div data-aos="fade-up" className={styles.project}>
                     <div className={styles.col_2}>
                         <h2>2nd Prize on CovHack 2021</h2>
                         <p>Me and a group of my friends joined the 2021 Coventry University Hackathon and we won the 2nd place. We created a project named parakeet-wp which allows users to keep all of their favourite wordpress pages in one place. I was mainly a designer since I was learning React at that time.</p>
@@ -84,7 +91,7 @@ export default function MyProjects() {
                         <img src={hackaton} alt="" />
                     </div>
                 </div>
-                <div className={styles.project}>
+                <div data-aos="fade-up" className={styles.project}>
                     <div className={styles.col_1}>
                         <img src={game} alt="" />
                     </div>
@@ -100,7 +107,7 @@ export default function MyProjects() {
                         </div>
                     </div>
                 </div>
-                <div className={styles.project}>
+                <div data-aos="fade-up" className={styles.project}>
                     <div className={styles.col_2}>
                         <h2>Sven the Chatbot</h2>
                         <p>One of the first group projects at my university was a ChatBot. We decided to make a bot that simply acts as your companion throughout the game.
@@ -115,7 +122,7 @@ export default function MyProjects() {
                         <img src={bot} alt="" />
                     </div>
                 </div>
-                <div className={styles.project}>
+                <div data-aos="fade-up" className={styles.project}>
                     <div className={styles.col_1}>
                         <img src={cal} alt="" />
                     </div>
@@ -131,7 +138,7 @@ export default function MyProjects() {
                         </div>
                     </div>
                 </div>
-                <div className={styles.project}>
+                <div data-aos="fade-up" className={styles.project}>
                     <div className={styles.col_2}>
                         <h2>Domestic Repairs Website</h2>
                         <p>I have been asked to develop a website for a company that specialises in the repair of domestic white goods such as washing machines and cookers. There was emphasis on back-end functionality, thus design is very simple.</p>

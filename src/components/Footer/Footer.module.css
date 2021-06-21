@@ -20,6 +20,10 @@
     align-items: center;
 }
 
+.col_1 h1 {
+    cursor: pointer;
+}
+
 .col_2 {
     display: flex;
     flex-direction: row;
@@ -29,6 +33,11 @@
 
 .col_2 .icons {
     font-size: 30px;
+}
+
+.icons a {
+    text-decoration: none;
+    color: black;
 }
 
 .icons i {
@@ -60,5 +69,29 @@
 
     .col_4 p {
         font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .row_1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .row_2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .col_2 {
+        justify-content: flex-start;
+    }
+
+    .icons i:first-child {
+        margin-left: 0;
+    }
+
+    .col_4 {
+        justify-content: flex-start;
     }
 }
