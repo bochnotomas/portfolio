@@ -40,7 +40,7 @@
     color: black;
 }
 
-.icons i {
+.icons a {
     margin-left: 1em;
 }
 
@@ -87,7 +87,7 @@
         justify-content: flex-start;
     }
 
-    .icons i:first-child {
+    .icons a:first-child {
         margin-left: 0;
     }
 

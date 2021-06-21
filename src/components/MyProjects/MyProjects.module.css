@@ -54,6 +54,10 @@
     margin-bottom: 1em;
 }
 
+.buttons a {
+    text-decoration: none;
+}
+
 .buttons button {
     margin-right: 30px;
     margin-bottom: 1em;
@@ -68,14 +72,24 @@
     color: white;
 }
 
-.buttons button:nth-child(2) {
+.buttons a:nth-child(2) button {
     background-color: #ff6584;
 }
 
-.buttons button:nth-child(3) {
+.buttons a:nth-child(3) button {
     background-color: transparent;
     border: 3px solid #00b866;
     color: black;
+}
+
+button#article {
+    background-color: transparent;
+    border: 3px solid #00b866;
+    color: black;
+}
+
+button#live_preview {
+    background-color: #ff6584;
 }
 
 @media only screen and (max-width: 768px) {
