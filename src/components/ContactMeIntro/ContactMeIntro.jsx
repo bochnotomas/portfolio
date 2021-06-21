@@ -51,7 +51,7 @@ export default function Intro() {
                             CV
                         </div>
                         <button>
-                            <a href={pdf} target="_blank">
+                            <a href={pdf} >
                                 <i class="far fa-file-alt"></i>
                             </a>
                         </button>
