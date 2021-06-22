@@ -32,7 +32,7 @@ export default function MyProjects() {
 
                     <div className={styles.col_2}>
                         <h2>Cryptozoid</h2>
-                        <p>This is one of my first serious react projects, the cryptocurrency tracker. The main focus of this project was to apply all the learned stuff that I have gained from practicing react and setting myself a challenge to build something that I am passionate about.</p>
+                        <p>This is one of my first serious react projects, the cryptocurrency tracker. The main focus of this project was to apply all the learned stuff that I have gained from practising react and setting myself a challenge to build something that I am passionate about.</p>
                         <p>React</p>
                         <div className={styles.buttons}>
                             <a href="https://github.com/bochnotomas/crypto_tracker">
