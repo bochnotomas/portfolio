@@ -8,7 +8,7 @@ export default function Intro() {
         <div className={styles.container}>
             <div className={styles.col_1}>
                 <h1>Hi, I'm Tomas!</h1>
-                <p>University student passionate about learning new stuff and development of something out of nothing.</p>
+                <p>University student passionate about learning new things and development of something out of nothing.</p>
                 <Link to="about_me_container" smooth={true} duration={1000} offset={-80}>
                     <button>Find out more</button>
                 </Link>
