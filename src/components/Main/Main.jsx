@@ -7,16 +7,15 @@ import Footer from '../Footer/Footer';
 import styles from './Main.module.css';
 
 export default function Main() {
-    return (
-        <div>
-            <Nav />
-            <div className={styles.container}>
-            <HeroSection />
-            <AboutMe />
-            <MyProjects />
-            <Footer />
-            </div>
-        </div>
-        
-    )
+  return (
+    <div>
+      <Nav />
+      <div className={styles.container}>
+        <HeroSection />
+        <AboutMe />
+        <MyProjects />
+        <Footer />
+      </div>
+    </div>
+  );
 }
